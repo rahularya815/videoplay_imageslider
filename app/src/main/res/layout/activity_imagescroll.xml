@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".imagescroll">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:flipInterval="1500"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+
+        android:autoStart="true">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:background="@drawable/img1"/>
+          <ImageView
+           android:layout_width="match_parent"
+            android:layout_height="400dp"
+
+              android:layout_gravity="center"
+             android:background="@drawable/img2"/>
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_gravity="center"
+
+              android:layout_height="500dp"
+              android:background="@drawable/img3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="300dp"
+            android:background="@drawable/img4"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="500dp"
+            android:background="@drawable/img5"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="650dp"
+            android:background="@drawable/img6"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="650dp"
+            android:background="@drawable/img7"/>
+    </ViewFlipper>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
